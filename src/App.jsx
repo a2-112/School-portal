@@ -144,7 +144,7 @@ export default function App() {
               />
             </div>
 
-            <button type="submit" className="w-full bg-gray-500 text-white py-3 rounded-lg hover:bg-blue-600 transition ">
+            <button type="submit" className="w-full bg-gray-500 text-white py-3 rounded-lg hover:bg-blue-600 :focus bg-blue-600 transition ">
               Register Student
             </button>
           </form>

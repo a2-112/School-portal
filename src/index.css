@@ -11,3 +11,8 @@ table tr:nth-of-type(even){
   border: white;
   color: white;
 }
+@media (max-width:40em) {
+  table{
+    font-size: 0.58em;
+  }
+}
