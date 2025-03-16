@@ -37,7 +37,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center p-6">
       {showStudentList ? (
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-8xl ">
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-blue-600 text-center">
             Registered Students
           </h1>
@@ -66,7 +66,7 @@ export default function App() {
                       <td className="p-2 md:p-4">
                         <button
                           onClick={() => handleDelete(index)}
-                          className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                          className="bg-green-500 text-white px-3 py-1 rounded hover:bg-red-600"
                         >
                           Delete
                         </button>
@@ -86,13 +86,14 @@ export default function App() {
           </button>
         </div>
       ) : (
-        <div className="w-full max-w-md">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-blue-600 text-center">School Portal</h1>
+        <div className="w-full max-w-5xl flex-col items-center Intro">
+        
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-blue-600 text-center">Judy's Tech Hub</h1>
 
           {message && <p className="text-green-600 font-bold mb-4 text-center">{message}</p>}
 
-          <form onSubmit={handleSubmit} className="bg-white p-6 shadow-lg rounded-lg">
-            <div className="mb-4">
+          <form onSubmit={handleSubmit} className="bg-white p-6 shadow-lg rounded-lg flex-col items-center user-detail">
+            <div className="mb-4 ">
               <label className="block text-gray-700 font-semibold">Name</label>
               <input
                 type="text"
@@ -143,7 +144,7 @@ export default function App() {
               />
             </div>
 
-            <button type="submit" className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition">
+            <button type="submit" className="w-full bg-gray-500 text-white py-3 rounded-lg hover:bg-blue-600 transition ">
               Register Student
             </button>
           </form>
